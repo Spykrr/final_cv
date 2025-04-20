@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Othmane Errahmi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background: #121212;
+      color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .cv-header {
+      background: linear-gradient(to right, #212529, #343a40);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      position: relative;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: #0d6efd;
+      bottom: 0;
+      left: 0;
+      border-radius: 5px;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #f8f9fa;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+      color: #0d6efd;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    #terminal {
+      background-color: #2c3e50;
+      border-radius: 10px;
+      padding: 0.8rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      min-height: 120px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    #terminal-input {
+      background: none;
+      border: none;
+      color: #0f0;
+      outline: none;
+      width: 90%;
+    }
+
+    #toggle-terminal-btn {
+      background-color: #2ecc71; 
+      color: #ffffff;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    #toggle-terminal-btn:hover {
+      background-color: #27ae60; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container py-4">
+
+    <div class="cv-header text-center">
+      <h1 class="mb-1">Othmane Errahmi</h1>
+      <p class="lead">Étudiant en ingénierie informatique - EMSI</p>
+    </div>
+
+    
+    <div class="text-center mb-3">
+      <button id="toggle-terminal-btn" class="btn btn-outline-dark">
+        <i class="bi bi-terminal"></i> Ouvrir / Fermer Terminal
+      </button>
+    </div>
+
+    <div id="terminal-container" class="card p-3 mb-4 bg-dark text-white d-none">
+      <h5 class="section-title text-white">Terminal</h5>
+      <div id="terminal">
+        <div id="terminal-output">
+          <div><span style="color: #0f0;">$</span> Tapez <strong>help</strong> pour voir la liste des commandes.</div>
+        </div>
+        <div>
+          <span style="color: #0f0;">$</span> <input type="text" id="terminal-input" autocomplete="off">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card p-4 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+          <img src="pfp.jpg" alt="Profil" class="profile-img mb-3">
+        </div>
+        <div class="col-md-9">
+          <h3 class="section-title">Profil</h3>
+          <p>Je suis étudiant en quatrième année à l'École Marocaine des Sciences de l'Ingénieur (EMSI). Passionné par le développement informatique, j’ai des compétences solides en programmation, en bases de données, et en systèmes d’exploitation. J’ai réalisé un stage au Ministère des Relations avec le Parlement, durant lequel j’ai développé une application de gestion des événements avec Laravel.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card p-4 mb-4">
+      <h3 class="section-title">Compétences</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Laravel, Git</li>
+            <li>Java,C,C++</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>SQL, MySQL, Oracle</li>
+            <li>Linux, Unix</li>
+            <li>Développement web & API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card p-4 mb-4">
+      <h3 class="section-title">Expérience</h3>
+    
+      <div>
+        <h5>Stagiaire Développeur Laravel <small class="text-muted">| Ministère des Relations avec le Parlement</small></h5>
+        <p><em>2024</em></p>
+        <ul>
+          <li>Développement d’une application de gestion des événements pour les contacts du ministère.</li>
+          <li>Utilisation de Laravel, MySQL et Bootstrap pour l’interface et la base de données.</li>
+        </ul>
+      </div>
+    
+      <div class="mt-4">
+        <h5>Projet Django - Application de Restaurant <small class="text-muted">| Réalisé individuellement</small></h5>
+        <p><em>2024</em></p>
+        <ul>
+          <li>Création d'une application web de restaurant avec affichage du menu (plats, prix, descriptions).</li>
+          <li>Fonctionnalités de réservation de table, commande en ligne (livraison ou à emporter).</li>
+          <li>Système de paiement intégré pour les commandes en ligne.</li>
+          <li>Utilisation de Django, HTML/CSS, JavaScript, et base de données SQLite/MySQL.</li>
+        </ul>
+      </div>
+    </div>
+
+   
+   <div class="card p-4 mb-4">
+    <h3 class="section-title">Éducation</h3>
+    <div>
+      <h5>École Marocaine des Sciences de l'Ingénieur (EMSI)</h5>
+      <p><em>2021 -> Présent</em> | 4ᵉ année d'études en ingénierie informatique</p>
+    </div>
+    <div>
+      <h5>Baccalauréat Scientifique</h5>
+      <p><em>2021</em></p>
+    </div>
+  </div>
+
+    
+    <div class="card p-4 mb-5">
+      <h3 class="section-title">Contact</h3>
+      <ul class="list-unstyled contact-info">
+        <li><i class="bi bi-envelope-fill"></i> othmaneasap@gmail.com</li>
+        <li><i class="bi bi-telephone-fill"></i> +212 6 10 80 15 66</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    
+    document.getElementById('toggle-terminal-btn').addEventListener('click', function () {
+      const terminalContainer = document.getElementById('terminal-container');
+      terminalContainer.classList.toggle('d-none');
+    });
+
+    
+    const terminalOutput = document.getElementById('terminal-output');
+    const terminalInput = document.getElementById('terminal-input');
+
+    const responses = {
+      help: `
+        <div>Commandes disponibles :</div>
+        <ul>
+          <li><strong>competences</strong> : Affiche les compétences</li>
+          <li><strong>experience</strong> : Affiche l'expérience</li>
+          <li><strong>education</strong> : Affiche l'éducation</li>
+          <li><strong>contact</strong> : Affiche les infos de contact</li>
+          <li><strong>clear</strong> : Efface le terminal</li>
+        </ul>
+      `,
+      competences: `
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Laravel, Django, Git</li>
+          <li>Java, Python</li>
+          <li>SQL, MySQL, SQLite, Oracle</li>
+          <li>Linux, Docker, Kubernetes</li>
+        </ul>
+      `,
+      experience: `
+        <div>- Stage Laravel (2024) au Ministère des Relations avec le Parlement</div>
+        <div>- Projet Django : Restaurant (menu, réservation, livraison, paiement)</div>
+      `,
+      education: `
+        <div>2021 -> Présent : EMSI Rabat - 4ᵉ année ingénierie informatique</div>
+        <div>2021 : Baccalauréat Scientifique</div>
+      `,
+      contact: `
+        <div>Email : othmaneasap@gmail.com</div>
+        <div>Téléphone : +212 6 10 80 15 66</div>
+      `
+    };
+
+    terminalInput.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        const command = terminalInput.value.trim().toLowerCase();
+        const userCommand = `<div><span style="color: #0f0;">$</span> ${command}</div>`;
+        terminalOutput.innerHTML += userCommand;
+
+        if (command === 'clear') {
+          terminalOutput.innerHTML = '';
+        } else if (responses[command]) {
+          terminalOutput.innerHTML += `<div>${responses[command]}</div>`;
+        } else {
+          terminalOutput.innerHTML += `<div style="color:red;">Commande inconnue : ${command}</div>`;
+        }
+
+        terminalInput.value = '';
+        terminalOutput.scrollTop = terminalOutput.scrollHeight;
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
