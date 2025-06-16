@@ -40,20 +40,6 @@
       border-radius: 5px;
     }
 
-    .profile-img {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.4s ease;
-    }
-
-    .profile-img:hover {
-      transform: scale(1.1);
-    }
-
     .card {
       background-color: #1e1e1e;
       border: none;
@@ -146,15 +132,8 @@
 
     
     <div class="card p-4 mb-4">
-      <div class="row align-items-center">
-        <div class="col-md-3 text-center">
-          <img src="prof3.jpg" alt="Profil" class="profile-img mb-3">
-        </div>
-        <div class="col-md-9">
-          <h3 class="section-title">Profil</h3>
-          <p>Je suis étudiant en quatrième année à l'École Marocaine des Sciences de l'Ingénieur (EMSI). Passionné par le développement informatique, j’ai des compétences solides en programmation, en bases de données, et en systèmes d’exploitation. J’ai réalisé un stage au Ministère des Relations avec le Parlement, durant lequel j’ai développé une application de gestion des événements avec Laravel.</p>
-        </div>
-      </div>
+      <h3 class="section-title">Profil</h3>
+      <p>Je suis étudiant en quatrième année à l'École Marocaine des Sciences de l'Ingénieur (EMSI). Passionné par le développement informatique, j'ai des compétences solides en programmation, en bases de données, et en systèmes d'exploitation. J'ai réalisé un stage au Ministère des Relations avec le Parlement, durant lequel j'ai développé une application de gestion des événements avec Laravel.</p>
     </div>
 
     
@@ -186,8 +165,8 @@
         <h5>Stagiaire Développeur Laravel <small class="text-muted">| Ministère des Relations avec le Parlement</small></h5>
         <p><em>2024</em></p>
         <ul>
-          <li>Développement d’une application de gestion des événements pour les contacts du ministère.</li>
-          <li>Utilisation de Laravel, MySQL et Bootstrap pour l’interface et la base de données.</li>
+          <li>Développement d'une application de gestion des événements pour les contacts du ministère.</li>
+          <li>Utilisation de Laravel, MySQL et Bootstrap pour l'interface et la base de données.</li>
         </ul>
       </div>
     
@@ -204,25 +183,29 @@
     </div>
 
    
-   <div class="card p-4 mb-4">
-    <h3 class="section-title">Éducation</h3>
-    <div>
-      <h5>École Marocaine des Sciences de l'Ingénieur (EMSI)</h5>
-      <p><em>2021 -> Présent</em> | 4ᵉ année d'études en ingénierie informatique</p>
+   <div class="card p-4 mb-4 text-center">
+    <h3 class="section-title mx-auto" style="width: fit-content;">Éducation</h3>
+    <div class="mb-3">
+      <h5><i class="bi bi-mortarboard-fill text-warning me-2"></i>École Marocaine des Sciences de l'Ingénieur (EMSI)</h5>
+      <p><em class="text-info">2021 → Présent</em> | 4ᵉ année d'études en ingénierie informatique</p>
     </div>
     <div>
-      <h5>Baccalauréat Scientifique</h5>
-      <p><em>2021</em></p>
+      <h5><i class="bi bi-award-fill text-success me-2"></i>Baccalauréat Scientifique</h5>
+      <p><em class="text-info">2021</em></p>
     </div>
   </div>
 
     
-    <div class="card p-4 mb-5">
-      <h3 class="section-title">Contact</h3>
-      <ul class="list-unstyled contact-info">
-        <li><i class="bi bi-envelope-fill"></i> othmaneasap@gmail.com</li>
-        <li><i class="bi bi-telephone-fill"></i> +212 6 10 80 15 66</li>
-      </ul>
+    <div class="card p-4 mb-5 text-center">
+      <h3 class="section-title mx-auto" style="width: fit-content;">Contact</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-unstyled contact-info">
+            <li class="mb-3"><i class="bi bi-envelope-fill"></i> othmaneasap@gmail.com</li>
+            <li class="mb-3"><i class="bi bi-telephone-fill"></i> +212 6 10 80 15 66</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
